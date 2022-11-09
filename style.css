@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    min-height: 100vh;
+    max-height: fit-content;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+}
+header {
+    width: 100%;
+    height: fit-content;
+}
+header p {
+    text-align: center;
+}
+header p:nth-child(1) {
+    font-size: x-large;
+    color: hsl(229, 6%, 66%);
+}
+header p:nth-child(2) {
+    font-size: x-large;
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+}
+
+header p:nth-child(3) {
+    width: 600px;
+    margin-top: 10px;
+    color: hsl(229, 6%, 66%);
+    margin: auto;
+    height: fit-content;
+}
+
+section {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    place-content: center;
+    margin-top: 40px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    place-items: center;
+    place-content: center;
+}
+
+
+article {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    min-width: 200px;
+    max-width: 520px;
+    border: 0px;
+}
+article > *:not(:first-child) {
+    margin-top: 10px;
+}
+article p:nth-child(1) {
+    font-weight: bold;
+}
+article p:nth-child(2) {
+    font-size: smaller;
+    width: 80%;
+}
+article img {
+    float: right;
+    margin-top: 20px;
+}
+
+section div:nth-child(1) article {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+article:nth-child(1) {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+article:nth-child(2) {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+section div:nth-child(3) article {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 1000px){
+    main {
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header p:nth-child(3) {
+        width: fit-content;
+    }
+}
+
+
+
+
+
+
+
+
+
